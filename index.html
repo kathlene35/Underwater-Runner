@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the browser tab title here. -->
+    <title>Ocean Splash Runner - Underwater Adventure</title>
+
+    <!-- Responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Game description for search engines -->
+    <meta name="description" content="">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph title here. -->
+    <meta property="og:title" content="Ocean Splash Runner">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph description here. -->
+    <meta property="og:description" content="Dive into an exciting underwater adventure with a cute little dolphin! Jump over sea rocks and glowing jellyfish in this endless runner game.">
+
+    <!-- Open Graph image: Replace with your public image URL. -->
+    <meta property="og:image" content="https://example.com/ocean-splash-runner-preview.png">
+
+    <!-- Open Graph page URL: Replace with your public game URL. -->
+    <meta property="og:url" content="https://example.com/ocean-splash-runner">
+
+    <meta property="og:type" content="website">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- GAME HEADER -->
+
+        <!-- CUSTOMIZATION AND ADJUSTMENT: Change the main displayed game title here. -->
+        <h1 id="gameTitle">🐬 Ocean Splash Runner 🌊</h1>
+
+        <!-- CUSTOMIZATION AND ADJUSTMENT: Change the game description here. -->
+        <p id="gameDescription">
+            Dive into an exciting underwater adventure!
+            Help the energetic little dolphin swim through the colorful
+            coral reef, jump over giant sea rocks and glowing jellyfish,
+            and collect shiny golden pearls along the way!
+        </p>
+
+
+        <!-- SCORE DISPLAY -->
+
+        <section class="score-container">
+
+            <div class="score-box">
+                <span>🏆 SCORE</span>
+                <strong id="scoreDisplay">0</strong>
+            </div>
+
+            <div class="score-box">
+                <span>⭐ HIGH SCORE</span>
+                <strong id="highScoreDisplay">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- GAME AREA -->
+
+        <section class="game-area">
+
+            <!-- HTML5 Canvas: Logical resolution 960 x 450 -->
+            <canvas
+                id="gameCanvas"
+                width="960"
+                height="450"
+                aria-label="Ocean Splash Runner gameplay area">
+            </canvas>
+
+
+            <!-- GAME OVER / START OVERLAY -->
+
+            <div id="gameOverlay" class="game-overlay">
+
+                <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over heading here. -->
+                <h2 id="overlayTitle">🐬 Ocean Splash Runner</h2>
+
+                <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over message here. -->
+                <p id="overlayMessage">
+                    Ready to explore the underwater world?
+                    Help your dolphin jump over obstacles
+                    and collect golden pearls!
+                </p>
+
+                <!-- START / RESTART BUTTON -->
+
+                <button
+                    id="startButton"
+                    type="button"
+
+                    data-start-text="Start Game"
+                    data-restart-text="Restart Game">
+
+                    Start Game
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GAME INSTRUCTIONS -->
+
+        <section class="instructions">
+
+            <h3>🎮 How to Play</h3>
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the gameplay instructions here. -->
+            <p id="gameInstructions">
+                Press SPACE or ARROW UP to make your dolphin jump.
+                You can also CLICK or TAP the game screen to jump.
+                Avoid sea rocks and glowing jellyfish.
+                Collect golden pearls and survive as long as possible!
+            </p>
+
+        </section>
+
+
+        <!-- ASSET STATUS -->
+
+        <p id="assetStatus" class="asset-status">
+            🌊 Preparing your underwater adventure...
+        </p>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
